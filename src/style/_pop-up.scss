@@ -1,5 +1,5 @@
 .pop-up {
-  transition: all 0.5s;
+  transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
   background-color: rgba(22, 44, 78, 0.6);
@@ -24,6 +24,7 @@
     top: 24px;
     width: 24px;
     height: 24px;
+    cursor: pointer;
   }
 
   &__close:before,
