@@ -1,13 +1,14 @@
 .header {
-  padding: 55px 0 0 0;
+  padding: 60px 0 0 0;
   color: #172C4F;
   font-family: Poppins;
   font-weight: 700;
 
-  &__container {
+  &__logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #172C4F;
   }
 
   &__logo {
