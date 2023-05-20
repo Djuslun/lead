@@ -15,10 +15,41 @@ body {
 // 42.222222%; /* 152/360 */
 
 [class*="__container"] {
-  max-width: 1920px;
+  padding: 0 31px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .page__header {
   margin-bottom: 93px;
+}
+
+@media (max-width:1024px) {
+  body {
+    background: url('../img/header__left.png') left top/30% no-repeat, url('../img/header__right.png') right top/30.875% no-repeat;
+  }
+
+  [class*="__container"] {
+    padding: 0 20px;
+    max-width: 460px;
+  }
+
+  .page__header {
+    margin-bottom: 165px;
+  }
+}
+
+@media (max-width:500px) {
+  body {
+    background: url('../img/header__left.png') left top/30% no-repeat, url('../img/header__right.png') right top/30.875% no-repeat;
+  }
+
+  [class*="__container"] {
+    padding: 0 20px;
+    max-width: 360px;
+  }
+
+  .page__header {
+    margin-bottom: 66px;
+  }
 }

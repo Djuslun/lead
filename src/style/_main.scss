@@ -1,3 +1,5 @@
+@import './timer';
+
 .main {
   flex: 1 1 auto;
   font-family: Poppins;
@@ -24,49 +26,6 @@
   }
 }
 
-.timer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-family: Poppins;
-
-  &__block {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
-    &:not(:last-child)::after {
-      content: ':';
-      font-size: 72px;
-      font-weight: 600;
-      position: absolute;
-      right: -20px;
-      color: #162C4E;
-
-    }
-  }
-
-  &__number {
-    margin-bottom: 3px;
-    font-size: 72px;
-    line-height: 1;
-    font-weight: 600;
-    color: #162C4E;
-  }
-
-  &__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 52px;
-    width: 132px;
-    font-size: 16px;
-    color: #fff;
-    background: url('/src/img/Vector.svg') center/cover no-repeat;
-  }
-}
-
-
 .button-box {
   margin-bottom: 72px;
 
@@ -79,7 +38,7 @@
   &__button {
     &::after {
       content: '';
-      margin-left: 40px;
+      margin-left: 35px;
       display: inline-block;
       width: 20px;
       height: 20px;
@@ -91,11 +50,60 @@
 .button {
   display: inline-flex;
   align-items: center;
-  padding: 16px 20px 17px 28px;
+  padding: 14px 18px 17px 28px;
   border-radius: 40px;
   vertical-align: middle;
   background-color: #1D4169;
   color: #fff;
   font-size: 18px;
   line-height: 27px;
+}
+
+@media (max-width:1024px) {
+  .main {
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 38px;
+    }
+
+    &__subtitlte {
+      max-width: 286px;
+      margin: 0 auto 40px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__timer {
+      margin-bottom: 44px;
+    }
+  }
+
+  .button-box {
+    margin-bottom: 168px;
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .main {
+    &__title {
+      margin-bottom: 15px;
+
+    }
+
+    &__timer {
+      margin-bottom: 42px;
+    }
+  }
+
+  .button-box {
+    margin-bottom: 86px;
+  }
 }
