@@ -1,0 +1,71 @@
+.pop-up {
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(22, 44, 78, 0.6);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+
+  &__content {
+    padding: 98px 16px 70px 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__close:before,
+  &__close:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 2px;
+    background-color: rgba(19, 89, 120, 0.5);
+    transform: translate(-50%, -50%);
+  }
+
+  &__close:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &__close:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 37px;
+    color: #162C4E;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+
+  &__button {
+    padding: 16px 73px;
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

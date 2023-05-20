@@ -1,5 +1,7 @@
 import './main.html';
 import './index.scss';
+import '../../modules/formSubmit'
+import '../../modules/showPopUp'
 import timer from '../../modules/timer';
 
 window.addEventListener('DOMContentLoaded', () => {
