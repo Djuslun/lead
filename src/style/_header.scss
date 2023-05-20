@@ -1,7 +1,8 @@
 .header {
-  padding: 60px 0;
-  font-weight: 700;
+  padding: 55px 0 0 0;
   color: #172C4F;
+  font-family: Poppins;
+  font-weight: 700;
 
   &__container {
     display: flex;
@@ -16,11 +17,15 @@
   &__title-box {}
 
   &__title-top {
-    font-size: 33px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 0.8;
   }
 
   &__title-bottom {
-    font-size: 9px;
+    font-weight: 600;
+    font-size: 13px;
     text-align: right;
+    letter-spacing: 2.3px;
   }
 }

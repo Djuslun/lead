@@ -3,12 +3,22 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: url('../img/header__left.png') left top no-repeat, url('../img/header__right.png') right top no-repeat;
+  background: url('../img/header__left.png') left top/24% no-repeat, url('../img/header__right.png') right top/13.875% no-repeat;
 }
 
-;
+// 24.583333%; /* 472/1920 */
+// 24.023438%; /* 246/1024 */
+// 48.888889%; /* 176/360 */
+
+// 11.875%; /* 228/1920 */
+// 23.828125%; /* 244/1024 */
+// 42.222222%; /* 152/360 */
 
 [class*="__container"] {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.page__header {
+  margin-bottom: 93px;
 }

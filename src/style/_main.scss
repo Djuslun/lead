@@ -1,12 +1,15 @@
 .main {
   flex: 1 1 auto;
+  font-family: Poppins;
 
   &__title {
     margin-bottom: 8px;
     font-size: 72px;
     line-height: 75px;
+    font-weight: 700;
     color: #162C4E;
     opacity: 0.39;
+    text-transform: uppercase;
   }
 
   &__subtitlte {
@@ -25,6 +28,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-family: Poppins;
 
   &__block {
     display: flex;
@@ -37,6 +41,8 @@
       font-weight: 600;
       position: absolute;
       right: -20px;
+      color: #162C4E;
+
     }
   }
 
@@ -45,6 +51,7 @@
     font-size: 72px;
     line-height: 1;
     font-weight: 600;
+    color: #162C4E;
   }
 
   &__text {
@@ -72,7 +79,7 @@
   &__button {
     &::after {
       content: '';
-      margin-left: 60px;
+      margin-left: 40px;
       display: inline-block;
       width: 20px;
       height: 20px;
