@@ -1,0 +1,14 @@
+body {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: url('../img/header__left.png') left top no-repeat, url('../img/header__right.png') right top no-repeat;
+}
+
+;
+
+[class*="__container"] {
+  max-width: 1920px;
+  margin: 0 auto;
+}

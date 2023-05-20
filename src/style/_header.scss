@@ -1,0 +1,26 @@
+.header {
+  padding: 60px 0;
+  font-weight: 700;
+  color: #172C4F;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 16px;
+  }
+
+  &__title-box {}
+
+  &__title-top {
+    font-size: 33px;
+  }
+
+  &__title-bottom {
+    font-size: 9px;
+    text-align: right;
+  }
+}
