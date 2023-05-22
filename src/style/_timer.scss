@@ -4,6 +4,8 @@
   gap: 20px;
   font-family: Poppins;
 
+  animation: fadeInDown 1s;
+
   &__block {
     display: flex;
     flex-direction: column;

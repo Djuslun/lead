@@ -6,6 +6,9 @@
 
   &__title {
     margin-bottom: 8px;
+
+    animation: fadeInDown 0.5s;
+    animation-fill-mode: none;
   }
 
   &__subtitlte {
@@ -22,6 +25,8 @@
 
 .button-box {
   margin-bottom: 67px;
+
+  animation: fadeInDown 0.5s;
 
   &__text {
     font-size: 18px;
@@ -57,8 +62,7 @@
   font-size: 72px;
   line-height: 75px;
   font-weight: 700;
-  color: #162C4E;
-  opacity: 0.39;
+  color: rgba(22, 44, 78, 0.39);
   text-transform: uppercase;
 }
 

@@ -11,6 +11,10 @@
   }
 }
 
+.animate__animated {
+  animation-fill-mode: none !important;
+}
+
 .accordion {
   width: 1705px;
   margin: 0 auto;
