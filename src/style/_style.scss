@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-bottom: 50px;
   text-align: center;
@@ -55,11 +59,6 @@ body {
     &::after {
       background: url('../img/header__right__768.png') right top/35.875% no-repeat;
     }
-  }
-
-  [class*="__container"] {
-    padding: 0 20px;
-    max-width: 460px;
   }
 
   .page__header {

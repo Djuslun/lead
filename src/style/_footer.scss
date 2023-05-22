@@ -1,16 +1,38 @@
 .footer {
+  position: relative;
   background-color: #162C4E;
   margin-bottom: 110px;
+  min-height: 192px;
 
   &__form {
-    padding: 61px 0 72px;
-    height: 192px;
+    padding: 61px 0 0 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    transform: translateY(-50%);
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('../img/arrow-right.svg') center/cover no-repeat;
+      transform: rotate(90deg);
+      margin-left: 15px;
+    }
   }
 }
 
 .form {
   position: relative;
-  background-color: #162C4E;
   width: 440px;
   margin: 0 auto;
 
@@ -28,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 36%;
+    top: 57%;
     right: 8px;
     background-color: #DF2224;
     height: 43px;
@@ -47,18 +69,25 @@
 
 @media (max-width:1024px) {
   .footer {
+    min-height: 160px;
 
     &__form {
-      padding: 59px 0 60px;
-      height: 160px;
+      padding: 59px 0 0 0;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      justify-content: center;
+      position: relative;
+      top: 0;
+      right: 0;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 
   .form {
-    position: relative;
-    background-color: #162C4E;
     width: 360px;
-    margin: 0 auto;
 
     &__input {
       font-size: 14px;
@@ -67,7 +96,7 @@
     }
 
     &__button {
-      top: 39%;
+      top: 63%;
       right: 4px;
       background-color: #DF2224;
       height: 33px;
@@ -78,16 +107,15 @@
 
 @media (max-width:500px) {
   .footer {
+    height: 141px;
 
     &__form {
-      padding: 50px 0px;
-      height: 141px;
+      padding: 50px 0px 0 0;
     }
   }
 
   .form {
     width: 280px;
-    margin: 0 auto;
 
     &__input {
       font-size: 14px;
@@ -96,7 +124,7 @@
     }
 
     &__button {
-      top: 38%;
+      top: 59%;
       right: 4px;
       background-color: #DF2224;
       height: 33px;
