@@ -12,12 +12,11 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 50%;
-    right: 100px;
+    top: 40%;
+    right: 115px;
     color: #fff;
     font-size: 20px;
     line-height: 30px;
-    transform: translateY(-50%);
 
     &::after {
       content: '';
