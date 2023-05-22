@@ -239,14 +239,12 @@
     &__content {
       display: flex;
       flex-direction: column;
-      gap: 4px;
     }
   }
 
   .item {
     display: flex;
     flex-direction: column-reverse;
-    gap: 4px;
 
     &__control {
       display: flex;
@@ -321,10 +319,12 @@
 
     &__event-link {
       font-size: 16px;
-      padding: 12.5px 24px;
+      padding: 10.5px 24px;
+      letter-spacing: normal;
     }
 
     &--active {
+      gap: 4px;
       border-bottom: none;
 
       .item__body {

@@ -69,10 +69,11 @@
 @media (max-width:1024px) {
   .footer {
     min-height: 160px;
+    margin-bottom: 48px;
 
     &__form {
-      padding: 59px 0 0 0;
-      margin-bottom: 20px;
+      padding: 40px 0 0 0;
+      margin-bottom: 15px;
     }
 
     &__link {
@@ -95,7 +96,7 @@
     }
 
     &__button {
-      top: 63%;
+      top: 54%;
       right: 4px;
       background-color: #DF2224;
       height: 33px;
@@ -106,10 +107,11 @@
 
 @media (max-width:500px) {
   .footer {
-    height: 141px;
+    min-height: 141px;
+    margin-bottom: 60px;
 
     &__form {
-      padding: 50px 0px 0 0;
+      padding: 30px 0px 0 0;
     }
   }
 
@@ -123,7 +125,7 @@
     }
 
     &__button {
-      top: 59%;
+      top: 49%;
       right: 4px;
       background-color: #DF2224;
       height: 33px;
