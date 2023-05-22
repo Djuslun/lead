@@ -6,12 +6,6 @@
 
   &__title {
     margin-bottom: 8px;
-    font-size: 72px;
-    line-height: 75px;
-    font-weight: 700;
-    color: #162C4E;
-    opacity: 0.39;
-    text-transform: uppercase;
   }
 
   &__subtitlte {
@@ -59,13 +53,20 @@
   line-height: 27px;
 }
 
+.title {
+  font-size: 72px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #162C4E;
+  opacity: 0.39;
+  text-transform: uppercase;
+}
+
 @media (max-width:1024px) {
   .main {
 
     &__title {
       margin-bottom: 20px;
-      font-size: 36px;
-      line-height: 38px;
     }
 
     &__subtitlte {
@@ -89,13 +90,17 @@
       margin-bottom: 15px;
     }
   }
+
+  .title {
+    font-size: 36px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width:500px) {
   .main {
     &__title {
       margin-bottom: 15px;
-
     }
 
     &__timer {
