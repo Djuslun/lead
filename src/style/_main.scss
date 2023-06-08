@@ -35,13 +35,11 @@
   }
 
   &__button {
-    &::after {
-      content: '';
+    & svg {
       margin-left: 35px;
       display: inline-block;
       width: 20px;
       height: 20px;
-      background: url('../img/arrow-right.svg') center/cover no-repeat;
     }
   }
 }
@@ -56,6 +54,15 @@
   color: #fff;
   font-size: 18px;
   line-height: 27px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #1e5ba1;
+  }
+
+  &:active {
+    background-color: #0b1f35;
+  }
 }
 
 .title {

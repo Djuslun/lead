@@ -17,13 +17,20 @@
     color: #fff;
     font-size: 20px;
     line-height: 30px;
+    transition: all 0.3s;
 
-    &::after {
-      content: '';
+    &:hover {
+      color: #1e5ba1;
+    }
+
+    &:active {
+      color: #0b1f35;
+    }
+
+    & svg {
       display: inline-block;
       width: 20px;
       height: 20px;
-      background: url('../img/arrow-right.svg') center/cover no-repeat;
       transform: rotate(90deg);
       margin-left: 15px;
     }
@@ -55,13 +62,15 @@
     height: 43px;
     width: 43px;
     border-radius: 50%;
+    transition: all 0.3s;
+    color: #fff;
 
-    &:after {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background: url('../img/arrow-right.svg') center/cover no-repeat;
+    &:hover {
+      background-color: #1e5ba1;
+    }
+
+    &:active {
+      background-color: #0b1f35;
     }
   }
 }

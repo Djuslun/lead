@@ -11,10 +11,6 @@
   }
 }
 
-.animate__animated {
-  animation-fill-mode: none !important;
-}
-
 .accordion {
   width: 1705px;
   margin: 0 auto;
@@ -145,11 +141,28 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 1.1px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #2f9b2b;
+      border-color: #2f9b2b;
+    }
   }
 
+  &:hover {
+    .item__control::after {
+      background-color: #162c4ecc;
+    }
+  }
 
   &--active {
     border-bottom: none;
+
+    &:hover {
+      .item__control::after {
+        background-color: #162c4e;
+      }
+    }
 
     .item__body {
       width: 995px;
