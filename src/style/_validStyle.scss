@@ -1,0 +1,16 @@
+._valid+span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  right: 70px;
+  width: 22px;
+  height: 16px;
+  border-radius: 50%;
+  background: url('../img//arrow.svg') center/cover no-repeat;
+}
+
+._unvalid {
+  color: #FF2222;
+  border: 1px solid #FF2222;
+}

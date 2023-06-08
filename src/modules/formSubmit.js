@@ -1,5 +1,5 @@
 import { showPopUp } from "./showPopUp";
-
+import { emailValid } from "../modules/validateEmail";
 const footerForm = document.querySelector('.footer__form');
 
 footerForm.addEventListener('submit', async (event) => {
@@ -12,27 +12,30 @@ footerForm.addEventListener('submit', async (event) => {
     formDataObject[key] = value;
   });
 
-  try {
-    const response = await fetch('https://kind-jay-tank-top.cyclic.app/api', {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8'
-      },
-      body: JSON.stringify(formDataObject)
-    })
+  if (emailValid) {
+    try {
+      const response = await fetch('https://kind-jay-tank-top.cyclic.app/api', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8'
+        },
+        body: JSON.stringify(formDataObject)
+      })
 
-    let result = await response.json();
+      let result = await response.json();
 
-    if (response.ok) {
-      showPopUp('ok')
-      console.log(result)
-    } else {
-      throw new Error('Submit error')
+      if (response.ok) {
+        showPopUp('ok')
+        console.log(result)
+      } else {
+        throw new Error('Submit error')
+      }
+
+    } catch (e) {
+      showPopUp('error')
+      console.log(e)
+    } finally {
+      footerForm.reset();
     }
-  } catch (e) {
-    showPopUp('error')
-    console.log(e)
-  } finally {
-    footerForm.reset();
   }
 })
